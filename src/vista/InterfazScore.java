@@ -33,6 +33,11 @@ public class InterfazScore extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
     }
+    public InterfazScore(int id) {
+        initComponents();
+        setLocationRelativeTo(null);
+        this.idTfk = id;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -189,7 +194,7 @@ public class InterfazScore extends javax.swing.JFrame {
             }
 
         }
-        score objs = new score(score, idSfk, topic, 43);
+        score objs = new score(score, idSfk, topic, idTfk);
 
         ControllerScore objca = new ControllerScore();
 
