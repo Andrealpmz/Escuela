@@ -190,7 +190,7 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
         String nombreC = String.valueOf(jComboBox3.getSelectedItem());
         String nombreSP = String.valueOf(jComboBox1.getSelectedItem());
         String nombrerb = String.valueOf(jComboBox2.getSelectedItem());
-        //&&
+       
         for (int i = 0; i < listav.size(); i++) {
             virtualcourse vc = listav.get(i);
             if (nombreC.equals(vc.getTitleC())) {

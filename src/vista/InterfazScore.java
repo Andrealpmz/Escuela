@@ -183,7 +183,7 @@ public class InterfazScore extends javax.swing.JFrame {
         listac = objcc.consultarEstudiante();
         for (int i = 0; i < listac.size(); i++) {
             student stu = listac.get(i);
-            if (nombreTo.equals(stu.getName1S())) {
+            if (nombreTo.equals(stu.getName1S()+" "+stu.getLastName1S())) {
 
                 idSfk = stu.getIdS();
             }
@@ -214,7 +214,7 @@ public class InterfazScore extends javax.swing.JFrame {
         listac = objcc.consultarEstudiante();
         for (int i = 0; i < listac.size(); i++) {
             student student = listac.get(i);
-            jComboBox1.addItem(student.getName1S() + " " + student.getLastName1S());
+            jComboBox1.addItem(student.getName1S()+" "+student.getLastName1S());
         }
 
 
