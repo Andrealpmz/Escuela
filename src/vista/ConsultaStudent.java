@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package vista;
-
+//jp es gay
 import control.ControllerAdministrador;
 import control.ControllerTeacher;
 import java.sql.ResultSet;
