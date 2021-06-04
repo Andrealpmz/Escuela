@@ -101,8 +101,8 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
         jLabel7.setText("Curso vitual");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 233, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton1.setText("Insertar");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +112,8 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 314, 137, 46));
 
-        jComboBox1.setBackground(new java.awt.Color(0, 0, 102));
+        jComboBox1.setBackground(new java.awt.Color(204, 204, 204));
+        jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         jComboBox1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +123,8 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
         });
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 101, 245, 44));
 
-        jComboBox2.setBackground(new java.awt.Color(0, 0, 102));
+        jComboBox2.setBackground(new java.awt.Color(204, 204, 204));
+        jComboBox2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         jComboBox2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -132,13 +134,14 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
         });
         getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 163, 245, 44));
 
-        jComboBox3.setBackground(new java.awt.Color(0, 0, 102));
+        jComboBox3.setBackground(new java.awt.Color(204, 204, 204));
+        jComboBox3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         jComboBox3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 225, 245, 44));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton2.setText("Volver");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -148,8 +151,8 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 314, 137, 46));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton3.setText("Limpiar");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -160,7 +163,7 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 314, 137, 46));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -90, 1970, 1340));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 390));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

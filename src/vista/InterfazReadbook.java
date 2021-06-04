@@ -82,7 +82,7 @@ public class InterfazReadbook extends javax.swing.JFrame {
         jLabel2.setText("Titulo");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 112, -1, -1));
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -93,48 +93,48 @@ public class InterfazReadbook extends javax.swing.JFrame {
                 jTextField1KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 112, 304, 22));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 112, 304, 46));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 204, 204));
         jLabel3.setText("Descripción:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 166, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, -1));
 
-        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField2KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 166, 304, 126));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 304, 126));
 
-        jTextField5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField5.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField5KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 158, 214, 22));
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 190, 214, 46));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(204, 204, 204));
         jLabel6.setText("NumeroP");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(527, 112, -1, -1));
 
-        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField6.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField6KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 112, 82, 22));
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 82, 46));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 204, 204));
         jLabel7.setText("Categoria");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 158, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText("Insertar");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -144,9 +144,9 @@ public class InterfazReadbook extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 411, 100, 30));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 100, 30));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Volver");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -155,9 +155,9 @@ public class InterfazReadbook extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 411, 100, 30));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 410, 100, 30));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("Continuar");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -166,9 +166,9 @@ public class InterfazReadbook extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 411, 100, 30));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 100, 30));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 102));
+        jButton4.setBackground(new java.awt.Color(204, 204, 204));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("Limpiar");
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -177,7 +177,7 @@ public class InterfazReadbook extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 411, 100, 30));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 410, 100, 30));
 
         jLabel4.setForeground(new java.awt.Color(204, 204, 204));
         jLabel4.setText("Insertar antes de continuar para guardar*");
@@ -186,7 +186,7 @@ public class InterfazReadbook extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(204, 204, 204));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, -10, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

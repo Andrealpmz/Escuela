@@ -69,9 +69,9 @@ public class InterfazSport extends javax.swing.JFrame {
                 jTextField1KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 118, 273, 24));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 273, 46));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText("Insertar");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -93,9 +93,9 @@ public class InterfazSport extends javax.swing.JFrame {
                 jTextField2KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 188, 256, 22));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, 256, 46));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Volver");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -106,7 +106,7 @@ public class InterfazSport extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 290, 100, 36));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("Continuar");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -117,7 +117,7 @@ public class InterfazSport extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 290, 100, 36));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 102));
+        jButton4.setBackground(new java.awt.Color(204, 204, 204));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("Limpiar");
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -128,11 +128,12 @@ public class InterfazSport extends javax.swing.JFrame {
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 290, 100, 36));
 
+        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
         jLabel4.setText("Insertar antes de continuar para guardar*");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 237, 319, 25));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1920, 1210));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 340));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

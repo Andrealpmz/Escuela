@@ -72,7 +72,7 @@ public class LoginAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(144, 128, 247, 33));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText("Ingresar");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -94,7 +94,7 @@ public class LoginAdmin extends javax.swing.JFrame {
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 193, -1, -1));
         getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(144, 188, 247, 33));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Volver");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -105,7 +105,7 @@ public class LoginAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 253, 70, 30));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("Limpiar");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -117,7 +117,7 @@ public class LoginAdmin extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 253, 70, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Free-Download-Dark-Blue-Backgrounds-for-Windows.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, -20, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 340));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

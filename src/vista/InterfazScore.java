@@ -88,14 +88,15 @@ public class InterfazScore extends javax.swing.JFrame {
         jLabel2.setText("Nota Obtenida");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 247, -1, -1));
 
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField1KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 250, 89, 22));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 250, 89, 46));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText("Insertar");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -112,6 +113,7 @@ public class InterfazScore extends javax.swing.JFrame {
         jLabel3.setText("Estudiante");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 112, -1, -1));
 
+        jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,9 +125,9 @@ public class InterfazScore extends javax.swing.JFrame {
                 jComboBox1KeyReleased(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 115, 264, 22));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 115, 264, 46));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Volver");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -136,7 +138,7 @@ public class InterfazScore extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 337, 100, 30));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("Limpiar");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -152,6 +154,7 @@ public class InterfazScore extends javax.swing.JFrame {
         jLabel4.setText("Tema a calificar");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -162,10 +165,10 @@ public class InterfazScore extends javax.swing.JFrame {
                 jTextField2KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 183, 269, 22));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 183, 269, 46));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 410));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -62,7 +62,7 @@ public class ConsultaStudent extends javax.swing.JFrame {
         jLabel1.setText("Bienvenido al panel de consultas");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 356, 41));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 102));
+        jButton4.setBackground(new java.awt.Color(204, 204, 204));
         jButton4.setText("Filtrar notas por materia");
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +72,7 @@ public class ConsultaStudent extends javax.swing.JFrame {
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 269, 47));
 
-        jButton6.setBackground(new java.awt.Color(0, 0, 102));
+        jButton6.setBackground(new java.awt.Color(204, 204, 204));
         jButton6.setText("Volver");
         jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -82,7 +82,7 @@ public class ConsultaStudent extends javax.swing.JFrame {
         });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 169, 47));
 
-        jButton7.setBackground(new java.awt.Color(0, 0, 102));
+        jButton7.setBackground(new java.awt.Color(204, 204, 204));
         jButton7.setText("Salir");
         jButton7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -105,10 +105,10 @@ public class ConsultaStudent extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 410, 100));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 410, 90));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -20, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 400));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

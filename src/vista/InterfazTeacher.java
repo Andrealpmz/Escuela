@@ -134,7 +134,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
         jLabel7.setText("Correo electronico *");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 442, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("Insertar");
         jButton1.setEnabled(false);
@@ -150,7 +150,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
         jLabel3.setText("Administrador en sesion ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, 35));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setText("Volver");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -160,7 +160,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 570, 156, 46));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setText("Limpiar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -261,7 +261,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 188, 130, 40));
 
         jTextField1.setEditable(false);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(834, 190, 161, 32));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(834, 190, 240, 45));
 
         jLabel11.setText("ss");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(732, 11, 342, 173));

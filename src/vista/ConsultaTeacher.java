@@ -52,7 +52,7 @@ TablaT st = new TablaT();
         jLabel1.setText("Bienvenido al panel de consultas");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 356, 41));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setText("Filtrar todos los estudiantes");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -62,12 +62,12 @@ TablaT st = new TablaT();
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 386, 47));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setText("Filtrar estudiante con notas más bajas en su materia");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 386, 47));
 
-        jButton6.setBackground(new java.awt.Color(0, 0, 102));
+        jButton6.setBackground(new java.awt.Color(204, 204, 204));
         jButton6.setText("Volver");
         jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +77,7 @@ TablaT st = new TablaT();
         });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 169, 47));
 
-        jButton7.setBackground(new java.awt.Color(0, 0, 102));
+        jButton7.setBackground(new java.awt.Color(204, 204, 204));
         jButton7.setText("Salir");
         jButton7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -103,7 +103,7 @@ TablaT st = new TablaT();
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, -1, 100));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

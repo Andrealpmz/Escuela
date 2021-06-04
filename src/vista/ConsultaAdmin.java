@@ -96,7 +96,7 @@ TablaT te = new TablaT();
         jLabel1.setText("Bienvenido al panel de consultas");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 11, 356, 41));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 102));
+        jButton4.setBackground(new java.awt.Color(204, 204, 204));
         jButton4.setText("Filtrar todos los docentes");
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -106,7 +106,7 @@ TablaT te = new TablaT();
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 80, 269, 47));
 
-        jButton6.setBackground(new java.awt.Color(0, 0, 102));
+        jButton6.setBackground(new java.awt.Color(204, 204, 204));
         jButton6.setText("Volver");
         jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -116,7 +116,7 @@ TablaT te = new TablaT();
         });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 169, 47));
 
-        jButton7.setBackground(new java.awt.Color(0, 0, 102));
+        jButton7.setBackground(new java.awt.Color(204, 204, 204));
         jButton7.setText("Salir");
         jButton7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -141,7 +141,7 @@ TablaT te = new TablaT();
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 466, 100));
 
-        jButton5.setBackground(new java.awt.Color(0, 0, 102));
+        jButton5.setBackground(new java.awt.Color(204, 204, 204));
         jButton5.setText("Filtrar cantidad de docentes por materia");
         jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -152,7 +152,7 @@ TablaT te = new TablaT();
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 145, 269, 47));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -30, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

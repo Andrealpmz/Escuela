@@ -135,7 +135,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel2.setText("Primer nombre:*");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 188, -1, -1));
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,7 +154,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel3.setText("Segundo nombre:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 262, -1, -1));
 
-        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -168,7 +168,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel4.setText("Primer apellido:*");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 340, -1, -1));
 
-        jTextField3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -182,14 +182,19 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel5.setText("Segundo apellido:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 418, -1, -1));
 
-        jTextField4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
         jTextField4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField4KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 407, 156, 45));
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 407, 156, 46));
 
         jTextField5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jTextField5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -205,7 +210,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel6.setText("Edad:*");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 125, -1, -1));
 
-        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField6.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -219,7 +224,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel7.setText("Genero:*");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 188, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("Insertar");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -231,7 +236,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 579, 148, 45));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setText("Volver");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -247,7 +252,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel8.setText("Curso:*");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 277, -1, -1));
 
-        jTextField7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField7.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -261,7 +266,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel9.setText("Horas de estudio:*");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 340, -1, -1));
 
-        jTextField8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField8.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -275,7 +280,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel10.setText("Estrato:*");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 418, -1, -1));
 
-        jTextField9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField9.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -284,7 +289,7 @@ public class InterfazStudent extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 407, 60, 45));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setText("Limpiar");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -308,31 +313,33 @@ public class InterfazStudent extends javax.swing.JFrame {
         jLabel13.setText("Usuario*");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 488, -1, -1));
 
-        jTextField10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jTextField10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextField10.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField10KeyReleased(evt);
             }
         });
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 485, 156, -1));
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 480, 276, 46));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(204, 204, 204));
         jLabel14.setText("Contraseña*");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 488, -1, -1));
 
+        jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jPasswordField1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPasswordField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jPasswordField1KeyReleased(evt);
             }
         });
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 485, 179, 34));
+        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 485, 179, 46));
 
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
         jLabel15.setText("jLabel15");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, -140, 2010, 1440));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 650));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -438,6 +445,10 @@ public class InterfazStudent extends javax.swing.JFrame {
     private void jPasswordField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyReleased
         habilitarBoton();
     }//GEN-LAST:event_jPasswordField1KeyReleased
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
 
     /**
      * @param args the command line arguments

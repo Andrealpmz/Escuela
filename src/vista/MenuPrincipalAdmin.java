@@ -61,7 +61,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText("Agregar nuevo estudiante");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -77,7 +77,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         jLabel1.setText("Iniciaste sesión como: Administrador ");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 371, 32));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 102));
+        jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("Salir");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -88,7 +88,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, 80, 30));
 
-        jButton5.setBackground(new java.awt.Color(0, 0, 102));
+        jButton5.setBackground(new java.awt.Color(204, 204, 204));
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton5.setText("Agregar nuevo profesor");
         jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -103,7 +103,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 371, 40));
 
-        jButton6.setBackground(new java.awt.Color(0, 0, 102));
+        jButton6.setBackground(new java.awt.Color(204, 204, 204));
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setText("Volver");
         jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -114,7 +114,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 80, 30));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 102));
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setText("Agregar nuevas actividades");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -126,7 +126,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 276, 40));
 
-        jButton7.setBackground(new java.awt.Color(0, 0, 102));
+        jButton7.setBackground(new java.awt.Color(204, 204, 204));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton7.setText("Consultas");
         jButton7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -137,7 +137,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 276, 40));
 
-        jButton8.setBackground(new java.awt.Color(0, 0, 102));
+        jButton8.setBackground(new java.awt.Color(204, 204, 204));
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton8.setText("Agregar nueva materia");
         jButton8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -152,7 +152,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 276, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Free-Download-Dark-Blue-Backgrounds-for-Windows.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, 730, 540));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, 450, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
