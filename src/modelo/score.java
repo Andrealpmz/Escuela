@@ -5,6 +5,13 @@
  */
 package modelo;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.LinkedList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author ANDREA PEREZ
@@ -60,6 +67,9 @@ public class score {
      */
     public void setIdTfk(int idTfk) {
         this.idTfk = idTfk;
+    }
+
+    public score(int idSC, int idSfk) {
     }
 
     /**
@@ -127,5 +137,38 @@ public class score {
     public String toString() {
         return "score{" + " score=" + score + "idS=" + idSfk +", topic=" + topic + ", idTfk=" + idTfk + '}';
     }
+    
+    
+//     public LinkedList<student> joincon2(String sql) {
+//
+//        BaseDatos objbd = new BaseDatos();
+//        LinkedList<score> lc = new LinkedList<>();
+//        ResultSet rs;
+//        int idSC;
+////        double score;
+//        int idSfk;
+//
+//        if (objbd.crearConexion()) {
+//            try {
+//                Statement st = objbd.getConexion().createStatement();
+//                rs = st.executeQuery(sql);
+//                while (rs.next()) {
+//                    
+//                    idSC = rs.getInt("idSC");
+////                    score = rs.getDouble("score");
+//                    idSfk = rs.getInt("idSfk");
+//                    
+//                    
+//                   lc.add(new score(idSC, idSfk));
+//                }
+//            } catch (SQLException ex) {
+//                Logger.getLogger(score.class.getName()).log(Level.SEVERE, null, ex);
+//
+//            }
+//
+//        return lc;
+//        }
+//
+//    }
 
 }

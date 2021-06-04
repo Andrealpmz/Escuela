@@ -74,7 +74,12 @@ public class student {
     }
        public student(int idSfk){
        this.idS=idSfk;}
+       
+//       public student(int idSC){
+//       this.idS=idSC;}
 
+       
+       
     /*public student(String name1S, String name2S, String lastName1S, String lastName2S, String age, String gender, String grade, double weeklyStudyHours, int socioeconomicStatus, int idAfk) {
         this.name1S = name1S;
         this.name2S = name2S;
@@ -99,6 +104,15 @@ public class student {
         this.idAfk = idAfk;
     }*/
 
+    public student(int idS, String name1S, String lastName1S) {
+        this.idS = idS;
+        this.name1S = name1S;
+        this.lastName1S = lastName1S;
+    }
+
+       
+       
+       
     public student(String name1S, String lastName1S, String user, String pass, String age, String gender, String grade, double weeklyStudyHours, int socioeconomicStatus, int idAfk) {
         this.name1S = name1S;
         this.lastName1S = lastName1S;
@@ -402,4 +416,37 @@ public class student {
         return lc;
     }
 
+//    public LinkedList<student> joincon2(String sql) {
+//
+//        BaseDatos objbd = new BaseDatos();
+//        LinkedList<student> lc = new LinkedList<>();
+//        ResultSet rs;
+//        String name1S;
+//         String lastName1S;
+//        int idS;
+//        int idSC;
+//
+//        if (objbd.crearConexion()) {
+//            try {
+//                Statement st = objbd.getConexion().createStatement();
+//                rs = st.executeQuery(sql);
+//                while (rs.next()) {
+//                    
+//                    name1S = rs.getString("name1S");
+//                    lastName1S = rs.getString("lastName1S");
+//                    idS = rs.getInt("idS");
+//                    idSC = rs.getInt("idSC");
+//                    
+//                   lc.add(new student(name1S, lastName1S, idS, idSC));
+//                }
+//            } catch (SQLException ex) {
+//                Logger.getLogger(student.class.getName()).log(Level.SEVERE, null, ex);
+//
+//            }
+//
+//        }
+//
+//        return lc;
+//    }
+    
 }

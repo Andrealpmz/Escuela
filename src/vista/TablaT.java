@@ -22,6 +22,7 @@ class TablaT {
     ControllerTeacher bus = null;
     ControllerStudent bus2 = null;
     ControllerTeacher bus3 = null;
+        ControllerStudent bus6 = null;
 
     public void visualizar_ProductoVO(JTable tabla) {
 
@@ -124,5 +125,40 @@ class TablaT {
          
          
          }
-    }
+     }
+         
+//         public void visualizar_ProductoVO6(JTable tabla) {
+//
+//        tabla.setDefaultRenderer(Object.class, new Render());
+//        DefaultTableModel dt = new DefaultTableModel() {
+//            @Override
+//            public boolean isCellEditable(int row, int column) {
+//                return false;
+//            }
+//        };
+//        dt.addColumn("idS");
+//        dt.addColumn("name1S");
+//        dt.addColumn("lastName1S");
+//        dt.addColumn("score");
+//       
+//        
+//        bus6= new ControllerStudent();
+//         student te = new student();
+//        LinkedList <student> list = bus6.join();
+//         if(list.size() > 0){
+//         for(int i=0; i<list.size(); i++)
+//         {
+//         Object fila[] = new Object[5];
+//          te = list.get(i);
+//          fila[0] = te.getIdS();
+//                fila[1] = te.getIdS();
+//         dt.addRow(fila);
+//         
+//         }
+//         tabla.setModel(dt);
+//            tabla.setRowHeight(60);
+//         
+//         
+//         }
+//    }
 }

@@ -19,7 +19,8 @@ public class ConsultaTeacher extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
 //= BaseDatos.getTabladatos("select nameT1, lastNameT1, email,idAfk  from teacher");
-TablaT st = new TablaT();
+    TablaT st = new TablaT();
+
     public void mostrartabla() {
 
     }
@@ -65,6 +66,11 @@ TablaT st = new TablaT();
         jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setText("Filtrar estudiante con notas más bajas en su materia");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 386, 47));
 
         jButton6.setBackground(new java.awt.Color(204, 204, 204));
@@ -100,7 +106,7 @@ TablaT st = new TablaT();
         ));
         jScrollPane1.setViewportView(tabla);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, -1, 100));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, -1, 180));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/983279.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 590));
@@ -119,8 +125,12 @@ TablaT st = new TablaT();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- st.visualizar_ProductoVO2(tabla);       
+        st.visualizar_ProductoVO2(tabla);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+//        st.visualizar_ProductoVO6(tabla);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -9,6 +9,7 @@ import java.util.LinkedList;
 import modelo.BaseDatos;
 import modelo.administrator;
 import modelo.student;
+import modelo.teacher;
 
 /**
  *
@@ -29,7 +30,17 @@ import modelo.student;
         return t;
     }
 
-   
+//    public LinkedList<student> join() {
+//       
+//     LinkedList<student> lt=null;
+//        
+//      String sql= "SELECT * FROM  student INNER JOIN score t ON t.IdSfk = s.IdS WHERE t.score >= 2.5 AND t.score <= 4.5";
+//        student objT=new student();
+//        
+//        lt=objT.joincon2(sql);
+//        return lt;
+//    
+//    }
     public LinkedList<student> consultarEstudiante() {
         
                 LinkedList<student> lc=null;
@@ -50,6 +61,18 @@ import modelo.student;
         lc=objc.consultarStudent(sql);
         return lc;
  
+        
+//    public LinkedList<student> join() {
+//
+//        LinkedList<student> lt = null;
+//
+//        String sql = "SELECT * FROM  student INNER JOIN score t ON t.IdSfk = s.IdS WHERE t.score >= 2.5 AND t.score <= 4.5";
+//        student objT = new student(idSC, idSfk);
+//
+//        lt = objT.joincon2(sql);
+//        return lt;
+//
+//    }
 
 }
     }
