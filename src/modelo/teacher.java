@@ -5,6 +5,9 @@
  */
 package modelo;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -39,12 +42,28 @@ public class teacher {
     private int idAfk;
 
     private int idSufk;
+    
+    private String rutafoto;
 
     public teacher() {
     }
      public teacher(int idT) {
          this.idT = idT;
     }
+
+    public teacher(String nameT1, String nameT2, String lastNameT1, String lastNameT2, String email, String passwordT, int idAfk, int idSufk, String rutafoto) {
+      
+        this.nameT1 = nameT1;
+        this.nameT2 = nameT2;
+        this.lastNameT1 = lastNameT1;
+        this.lastNameT2 = lastNameT2;
+        this.email = email;
+        this.passwordT = passwordT;
+        this.idAfk = idAfk;
+        this.idSufk = idSufk;
+        this.rutafoto = rutafoto;
+    }
+     
 
     public teacher(int idT, String nameT1, String nameT2, String lastNameT1, String lastNameT2, String email, int idAfk) {
         this.idT = idT;
@@ -174,6 +193,7 @@ public class teacher {
     public String getEmail() {
         return email;
     }
+    
 
     /**
      * Set the value of email
@@ -182,6 +202,14 @@ public class teacher {
      */
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getRutafoto() {
+        return rutafoto;
+    }
+
+    public void setRutafoto(String rutafoto) {
+        this.rutafoto = rutafoto;
     }
 
     /**
@@ -282,6 +310,12 @@ public class teacher {
         this.idT = idT;
     }
 
+    @Override
+    public String toString() {
+        return "teacher{" + "idT=" + idT + ", nameT1=" + nameT1 + ", nameT2=" + nameT2 + ", lastNameT1=" + lastNameT1 + ", lastNameT2=" + lastNameT2 + ", email=" + email + ", passwordT=" + passwordT + ", idAfk=" + idAfk + ", idSufk=" + idSufk + ", rutafoto=" + rutafoto + '}';
+    }
+
+    
     public LinkedList<teacher> consultarTeacher(String sql) {
 
         BaseDatos objbd = new BaseDatos();
@@ -373,4 +407,39 @@ public class teacher {
         }
         return datos;
     }
-}
+
+    public boolean inserTeacher(String sql, teacher objr) {
+        boolean t = false;
+        BaseDatos objbd = new BaseDatos();
+        PreparedStatement pst = null;
+        File archivoImagen = new File(objr.getRutafoto());
+        FileInputStream fis = null;
+        if (objbd.crearConexion()) {
+            try {
+                fis = new FileInputStream(archivoImagen);
+                pst = objbd.getConexion().prepareStatement(sql);
+                pst.setString(1, objr.getNameT1());
+                pst.setString(2, objr.getNameT2());
+                pst.setString(3, objr.getLastNameT1());
+                pst.setString(4, objr.getLastNameT2());
+                pst.setString(5, objr.getEmail());
+                pst.setString(6, Integer.toString(objr.getIdAfk()));
+                pst.setString(7, objr.getPasswordT());
+                pst.setString(8, Integer.toString(objr.getIdSufk()));
+                pst.setBinaryStream(9, fis, (int) archivoImagen.length());
+                pst.executeUpdate();
+
+                t=true;
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(teacher.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (SQLException ex) {
+                Logger.getLogger(teacher.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
+
+        return t;
+
+    }
+    }
+

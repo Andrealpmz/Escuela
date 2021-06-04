@@ -17,16 +17,25 @@ public class ControllerTeacher {
 
   
 
-public boolean insertTeacher(teacher objr) {
+/*public boolean insertTeacher(teacher objr) {
         boolean t = false;
-        String  sql = "insert into teacher(nameT1, nameT2, lastNameT1, lastNameT2, email, idAfk, passwordT, idSufk)" 
+        String  sql = "insert into teacher(nameT1, nameT2, lastNameT1, lastNameT2, email, idAfk, passwordT, idSufk, photoT)" 
                 + " value('"+objr.getNameT1()+"', '"+objr.getNameT2()+"', '"+objr.getLastNameT1()+"', '"+objr.getLastNameT2()+"', '"+objr.getEmail()+"', "
                 + "'"+objr.getIdAfk()+"', '"+ objr.getPasswordT()+"', '"+objr.getIdSufk()+"');";
         System.out.println(sql);
         BaseDatos objbd = new BaseDatos();
         t = objbd.ejecutarSQL(sql);
         return t;
+    }*/
+public boolean insertTeacher(teacher objr) {
+        boolean t = false;
+        String sql = "insert into teacher(nameT1, nameT2, lastNameT1, lastNameT2, email, idAfk, passwordT, idSufk, photoT) value(?,?,?,?,?,?,?,?,?);";
+        teacher objt = new teacher();
+        t = objt.inserTeacher(sql, objr);
+        return t;
+
     }
+
 
     public teacher consultarDocentesApellido(String ape) {
 
