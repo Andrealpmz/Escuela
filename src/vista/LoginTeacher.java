@@ -5,7 +5,6 @@
  */
 package vista;
 
-import control.ControllerAdministrador;
 import control.ControllerTeacher;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -13,7 +12,6 @@ import java.sql.Statement;
 import java.util.LinkedList;
 import javax.swing.JOptionPane;
 import modelo.BaseDatos;
-import modelo.administrator;
 import modelo.teacher;
 
 /**
@@ -160,10 +158,12 @@ public class LoginTeacher extends javax.swing.JFrame {
            
             if (lc.get(i).getEmail().equals(jTextField1.getText())) {
                 if (lc.get(i).getPasswordT().equals(jPasswordField1.getText())) {
+                     System.out.println(lc.get(i).getIdT());
                     JOptionPane.showMessageDialog(this, "Bienvenido (a) " + lc.get(i).getNameT1() + " " + lc.get(i).getLastNameT1());
                     MenuPrincipalTeacher ventana = new MenuPrincipalTeacher(lc.get(i).getIdT());
                     ventana.jLabel2.setText(lc.get(i).getNameT1() + " " + lc.get(i).getLastNameT1());
                     ventana.setVisible(true);
+                   
                     this.dispose();
                     break;
                 }

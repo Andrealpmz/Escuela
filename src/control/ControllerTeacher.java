@@ -42,7 +42,7 @@ public boolean insertTeacher(teacher objr) {
         
         LinkedList<teacher> lc=null;
         
-        String sql="SELECT idT, nameT1,nameT2, lastNameT1, lastnameT2, email,passwordT, idSufk FROM teacher ";
+        String sql="SELECT idT, nameT1, lastNameT1, email,passwordT FROM teacher ";
               //  + "WHERE email = '"+email+"' && passwordT = '"+passwordT+"'";
         teacher objc=new teacher();
         
@@ -51,7 +51,7 @@ public boolean insertTeacher(teacher objr) {
     }
 
 
-    public LinkedList<teacher> insertTeacher() {
+    public LinkedList<teacher> buscarTeacher() {
        
      LinkedList<teacher> lt=null;
         

@@ -17,27 +17,27 @@ public class score {
     
     private int idSfk;
 
-    private int idEnfk;
+  
     private int idTfk;
 
     private String topic;
-    public score(int idSC, double score, int idSfk, int idEnfk) {
+    public score(int idSC, double score, int idSfk, int idTfk) {
         this.idSC = idSC;
         this.score = score;
         this.idSfk = idSfk;
-        this.idEnfk = idEnfk;
+        this.idTfk = idTfk;
     }
 
-    public score(double score, int idSfk, String topic, int idTfk) {
+    public score(double score, int idSfk,String topic, int idTfk ) {
         this.score = score;
         this.idSfk = idSfk;
         this.idTfk = idTfk;
         this.topic = topic;
     }
-    public score(double score, int idSfk, int idEnfk) {
+    public score(double score, int idSfk, int idTfk) {
         this.score = score;
         this.idSfk = idSfk;
-        this.idEnfk = idEnfk;
+        this.idTfk = idTfk;
     }
 
     public score(double score) {

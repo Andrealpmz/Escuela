@@ -42,6 +42,9 @@ public class teacher {
 
     public teacher() {
     }
+     public teacher(int idT) {
+         this.idT = idT;
+    }
 
     public teacher(int idT, String nameT1, String nameT2, String lastNameT1, String lastNameT2, String email, int idAfk) {
         this.idT = idT;
@@ -58,6 +61,14 @@ public class teacher {
         this.lastNameT1 = lastNameT1;
         this.email = email;
         this.idAfk = idAfk;
+        this.passwordT = passwordT;
+
+    }
+       public teacher(int idT, String nameT1, String lastNameT1, String email, String passwordT) {
+        this.nameT1 = nameT1;
+        this.lastNameT1 = lastNameT1;
+        this.email = email;
+        this.idT = idT;
         this.passwordT = passwordT;
 
     }
@@ -284,6 +295,7 @@ public class teacher {
         String mail;
         int idTe;
         int idSu;
+        int idAd;
 
         if (objbd.crearConexion()) {
             try {
@@ -291,14 +303,12 @@ public class teacher {
                 rs = st.executeQuery(sql);
                 while (rs.next()) {
                     name = rs.getString("nameT1");
-                    name2 = rs.getString("nameT2");
                     last = rs.getString("lastNameT1");
-                    last2 = rs.getString("lastNameT2");
                     mail = rs.getString("email");
                     password = rs.getString("passwordT");
-                    idSu = rs.getInt("idSufk");
                     idTe = rs.getInt("idT");
-                    lc.add(new teacher(name, name2, last, last2, mail, password, idSu, idTe));
+                    
+                   lc.add(new teacher(idTe, name, last, mail, password));
                 }
             } catch (SQLException ex) {
                 Logger.getLogger(teacher.class.getName()).log(Level.SEVERE, null, ex);
@@ -309,6 +319,8 @@ public class teacher {
 
         return lc;
     }
+    
+    
 
     public teacher consultarDocentesApellido(String sql) {
 
@@ -361,9 +373,4 @@ public class teacher {
         }
         return datos;
     }
-
-    public int idT() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
 }
