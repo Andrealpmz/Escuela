@@ -5,11 +5,14 @@
  */
 package vista;
 
+import control.ControllerStudent;
 import control.ControllerTeacher;
+import java.util.Arrays;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import modelo.teacher;
 import java.util.LinkedList;
+import modelo.student;
 
 /**
  *
@@ -18,6 +21,8 @@ import java.util.LinkedList;
 class TablaT {
 
     ControllerTeacher bus = null;
+    ControllerStudent bus2 = null;
+    ControllerTeacher bus3 = null;
 
     public void visualizar_ProductoVO(JTable tabla) {
 
@@ -30,28 +35,91 @@ class TablaT {
         };
         dt.addColumn("idT");
         dt.addColumn("nombre");
+        dt.addColumn("apellido");
         dt.addColumn("correo");
-        dt.addColumn("contraseña");
         
-        bus= new ControllerTeacher();
+
+        bus = new ControllerTeacher();
         teacher te = new teacher();
-        LinkedList <teacher> list = bus.buscarTeacher();
-         if(list.size() > 0){
-         for(int i=0; i<list.size(); i++)
-         {
-         Object fila[] = new Object[5];
-          te = list.get(i);
-          fila[0] = te.getIdT();
+        LinkedList<teacher> list = bus.buscarTeacher();
+        if (list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
+                Object fila[] = new Object[5];
+                te = list.get(i);
+                fila[0] = te.getIdT();
                 fila[1] = te.getNameT1();
                 fila[2] = te.getLastNameT1();
                 fila[3] = te.getEmail();
-         dt.addRow(fila);
-         
-         }
-         tabla.setModel(dt);
+                dt.addRow(fila);
+
+            }
+            tabla.setModel(dt);
             tabla.setRowHeight(60);
-         
-         
-         }
+
+        }
+    }
+
+    public void visualizar_ProductoVO2(JTable tabla) {
+
+        tabla.setDefaultRenderer(Object.class, new Render());
+        DefaultTableModel dt = new DefaultTableModel() {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+        };
+        dt.addColumn("idS");
+        dt.addColumn("nombre");
+        dt.addColumn("Apellido");
+        dt.addColumn("Usuario");
+
+        bus2 = new ControllerStudent();
+        student st = new student();
+        LinkedList<student> list = bus2.consultarEstudiante();
+        if (list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
+                Object fila[] = new Object[5];
+                st = list.get(i);
+                fila[0] = st.getIdS();
+                fila[1] = st.getName1S();
+                fila[2] = st.getLastName1S();
+                fila[3] = st.getUser();
+                dt.addRow(fila);
+
+            }
+            tabla.setModel(dt);
+            tabla.setRowHeight(60);
+
+        }
+    }
+
+    public void visualizar_ProductoVO3(JTable tabla) {
+
+        tabla.setDefaultRenderer(Object.class, new Render());
+        DefaultTableModel dt = new DefaultTableModel() {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+        };
+        dt.addColumn("idT");
+        dt.addColumn("idSufk");
+
+        bus3 = new ControllerTeacher();
+        teacher te = new teacher();
+        LinkedList<teacher> list = bus3.join();
+        if (list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
+                Object fila[] = new Object[5];
+                te = list.get(i);
+                fila[0] = te.getIdT();
+                fila[1] = te.getIdSufk();
+                dt.addRow(fila);
+
+            }
+            tabla.setModel(dt);
+            tabla.setRowHeight(60);
+
+        }
     }
 }
