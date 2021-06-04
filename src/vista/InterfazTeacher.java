@@ -176,6 +176,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
             }
         });
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -339,7 +340,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
         MenuPrincipalAdmin ventana = new MenuPrincipalAdmin(idAfk, email);
-        ventana.jLabel2.setText(" " + getName());
+        ventana.jLabel2.setText(" " + idAfk);
         ventana.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -350,7 +351,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
         jTextField4.setText("");
         jTextField5.setText("");
         jTextField6.setText("");
-        jComboBox1.setSelectedItem("");
+        jComboBox1.setSelectedItem(0);
         jPasswordField1.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
 

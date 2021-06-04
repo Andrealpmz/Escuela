@@ -21,10 +21,6 @@ public class InterfazStudent extends javax.swing.JFrame {
     ControllerStudent metodos = new ControllerStudent();
     ControllerAdministrador metodosA = new ControllerAdministrador();
 
-   
-
-  
-
 //    public String name1;
 //    public String lastname1;
     /**
@@ -45,7 +41,6 @@ public class InterfazStudent extends javax.swing.JFrame {
     public int idAdmin;
     public String nameA;
     private String LastnameA1;
-    
 
     LinkedList<student> lc = metodos.BuscarEstudianteRegistrado();
     LinkedList<administrator> la = metodosA.BuscarAdministratorRegistrado();
@@ -54,20 +49,22 @@ public class InterfazStudent extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
     }
-      InterfazStudent(int id, String nombre) {
+
+    InterfazStudent(int id, String nombre) {
         initComponents();
         setLocationRelativeTo(null);
         this.nameA = nombre;
         this.idAfk = id;
-      
+
     }
-      InterfazStudent(int id, String nombre, String apellido) {
+
+    InterfazStudent(int id, String nombre, String apellido) {
         initComponents();
         setLocationRelativeTo(null);
         this.nameA = nombre;
         this.idAfk = id;
         this.LastnameA1 = apellido;
-      
+
     }
 //    }
 //public InterfazStudent(String name1S, String lastName1S) {
@@ -76,11 +73,6 @@ public class InterfazStudent extends javax.swing.JFrame {
 //        this.name1 = name1S;
 //        this.lastname1 = lastName1S;
 //    }
-
- 
-  
-    
-   
 
     public void setIdAdmin(int id) {
         idAdmin = id;
@@ -349,7 +341,7 @@ public class InterfazStudent extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -407,7 +399,7 @@ public class InterfazStudent extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
@@ -452,7 +444,7 @@ public class InterfazStudent extends javax.swing.JFrame {
 
         MenuPrincipalAdmin ventana = new MenuPrincipalAdmin(idAfk, nameA);
         ventana.setVisible(true);
-        ventana.jLabel2.setText(""+ nameA );
+        ventana.jLabel2.setText("" + nameA);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -466,6 +458,8 @@ public class InterfazStudent extends javax.swing.JFrame {
         jTextField7.setText("");
         jTextField8.setText("");
         jTextField9.setText("");
+        jTextField10.setText("");
+        jPasswordField1.setText("");
 
     }//GEN-LAST:event_jButton3ActionPerformed
 

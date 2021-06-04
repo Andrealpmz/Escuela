@@ -99,17 +99,21 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
             }
         });
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
 
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
             }
         });
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton2.setText("Volver");
@@ -249,17 +253,16 @@ public class InterfazStudent_Activity extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-        JOptionPane.showMessageDialog(null, "La matricula del estudiante ...  fue satisfactoria");
-        MenuPrincipalAdmin ventana = new MenuPrincipalAdmin();
+        MenuPrincipalStudent ventana = new MenuPrincipalStudent();
         ventana.setVisible(true);
         this.dispose();
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        jComboBox1.setSelectedItem("");
-        jComboBox2.setSelectedItem("");
-        jComboBox3.setSelectedItem("");
+        jComboBox1.setSelectedItem(0);
+        jComboBox2.setSelectedItem(0);
+        jComboBox3.setSelectedItem(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed

@@ -23,6 +23,15 @@ public class InterfazAdmin extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
 
+    public void habilitarBoton() {
+        if (!jTextField1.getText().isEmpty() && !jTextField3.getText().isEmpty()
+                && !jTextField6.getText().isEmpty() && !jPasswordField1.getText().isEmpty()) {
+            jButton1.setEnabled(true);
+        } else {
+            jButton1.setEnabled(false);
+        }
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -63,6 +72,11 @@ public class InterfazAdmin extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField1KeyReleased(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setText("Segundo nombre:");
@@ -73,6 +87,11 @@ public class InterfazAdmin extends javax.swing.JFrame {
         jLabel4.setText("Primer apellido:*");
 
         jTextField3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField3KeyReleased(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setText("Segundo apellido:");
@@ -83,12 +102,18 @@ public class InterfazAdmin extends javax.swing.JFrame {
         jLabel6.setText("Correo:*");
 
         jTextField6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField6KeyReleased(evt);
+            }
+        });
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel7.setText("Contraseña:*");
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton1.setText("Insertar");
+        jButton1.setEnabled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -100,6 +125,12 @@ public class InterfazAdmin extends javax.swing.JFrame {
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
+            }
+        });
+
+        jPasswordField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jPasswordField1KeyReleased(evt);
             }
         });
 
@@ -240,14 +271,30 @@ public class InterfazAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       jTextField1.setText("");
-       jTextField2.setText("");
-       jTextField3.setText("");
-       jTextField4.setText("");
-       jTextField6.setText("");
-       jPasswordField1.setText("");
-       
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField6.setText("");
+        jPasswordField1.setText("");
+
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_jTextField1KeyReleased
+
+    private void jTextField6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField6KeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_jTextField6KeyReleased
+
+    private void jPasswordField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_jPasswordField1KeyReleased
+
+    private void jTextField3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField3KeyReleased
+        habilitarBoton();
+    }//GEN-LAST:event_jTextField3KeyReleased
 
     /**
      * @param args the command line arguments
