@@ -29,9 +29,9 @@ class TablaT {
             }
         };
         dt.addColumn("idT");
-        dt.addColumn("namteT1");
-        dt.addColumn("email");
-        dt.addColumn("passwordT");
+        dt.addColumn("nombre");
+        dt.addColumn("correo");
+        dt.addColumn("contraseña");
         
         bus= new ControllerTeacher();
         teacher te = new teacher();
