@@ -37,9 +37,9 @@ public boolean insertTeacher(teacher objr) {
     }
 
 
-    public teacher consultarDocentesApellido(String ape) {
+    public teacher consultarDocentesApellido() {
 
-        String sql = "select * from teacher where lastNameT1='" + ape + "';";
+        String sql = "select * from teacher where lastNameT1='" + "cucho" + "';";
         teacher objc = new teacher();
         objc = objc.consultarDocentesApellido(sql);
 
@@ -64,7 +64,7 @@ public boolean insertTeacher(teacher objr) {
        
      LinkedList<teacher> lt=null;
         
-        String sql="select * from teacher;";
+        String sql="SELECT * FROM teacher";
         teacher objT=new teacher();
         
         lt=objT.consultarTeacher(sql);
