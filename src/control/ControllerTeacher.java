@@ -71,6 +71,18 @@ public boolean insertTeacher(teacher objr) {
         return lt;
     
     }
+      public LinkedList<teacher> join() {
+       
+     LinkedList<teacher> lt=null;
+        
+      String sql= "SELECT * FROM  subject s INNER JOIN teacher t ON t.IdSufk = s.IdSu";
+        teacher objT=new teacher();
+        
+        lt=objT.joincon(sql);
+        return lt;
+    
+    }
+    
       /* public ControllerTeacher() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }*/

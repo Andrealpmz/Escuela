@@ -50,6 +50,18 @@ public class teacher {
      public teacher(int idT) {
          this.idT = idT;
     }
+     public teacher(int idT, int idSufk) 
+     {
+         this.idT = idT;
+         this.idSufk = idSufk;
+    }
+     public teacher(int idT, int idSufk, String nameT1) 
+     {
+         this.idT = idT;
+         this.idSufk = idSufk;
+          this.nameT1 = nameT1;
+    }
+     
 
     public teacher(String nameT1, String nameT2, String lastNameT1, String lastNameT2, String email, String passwordT, int idAfk, int idSufk, String rutafoto) {
       
@@ -440,6 +452,41 @@ public class teacher {
 
         return t;
 
+    }
+    public LinkedList<teacher> joincon(String sql) {
+
+        BaseDatos objbd = new BaseDatos();
+        LinkedList<teacher> lc = new LinkedList<>();
+        ResultSet rs;
+        String name;
+        String name2;
+        String last;
+        String last2;
+        String password;
+        String mail;
+        int idTe;
+        int idSu;
+        int idAd;
+
+        if (objbd.crearConexion()) {
+            try {
+                Statement st = objbd.getConexion().createStatement();
+                rs = st.executeQuery(sql);
+                while (rs.next()) {
+                   
+                    idSu = rs.getInt("idSufk");
+                    idTe = rs.getInt("idT");
+                    
+                   lc.add(new teacher(idTe, idSu));
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(teacher.class.getName()).log(Level.SEVERE, null, ex);
+
+            }
+
+        }
+
+        return lc;
     }
     }
 

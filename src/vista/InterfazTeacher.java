@@ -1,4 +1,3 @@
-
 package vista;
 
 import control.ControllerTeacher;
@@ -10,13 +9,10 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import modelo.readbook;
 import modelo.teacher;
-import modelo.administrator;
 import modelo.subject;
-import modelo.virtualcourse;
 import javax.swing.JPanel;
+
 /**
  *
  * @author ANDREA PEREZ
@@ -37,16 +33,14 @@ public class InterfazTeacher extends javax.swing.JFrame {
             jButton1.setEnabled(false);
         }
     }
-        public InterfazTeacher() {
+
+    public InterfazTeacher() {
         initComponents();
-        
-        te.visualizar_ProductoVO(tabla);
+
     }
 
     public int idA;
     private int idAfk;
-
-
 
     public InterfazTeacher(int id) {
         initComponents();
@@ -61,6 +55,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
     LinkedList<subject> listaSu;
     int idSufk;
     String ruta;
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -93,8 +88,6 @@ public class InterfazTeacher extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tabla = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -234,19 +227,6 @@ public class InterfazTeacher extends javax.swing.JFrame {
 
         jLabel11.setText("ss");
 
-        tabla.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(tabla);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -314,10 +294,6 @@ public class InterfazTeacher extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(130, 130, 130)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -364,16 +340,14 @@ public class InterfazTeacher extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(188, 188, 188))
+                .addContainerGap(451, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
+
         String nom = jTextField2.getText();
         String nom2 = jTextField3.getText();
         String ape = jTextField6.getText();
@@ -391,8 +365,6 @@ public class InterfazTeacher extends javax.swing.JFrame {
         }
         teacher objr = new teacher(nom, nom2, ape, ape2, cor, pass, idAfk, idSufk, ruta);
         ControllerTeacher objcr = new ControllerTeacher();
-         te.visualizar_ProductoVO(tabla);
-        
 
         boolean t = objcr.insertTeacher(objr);
 
@@ -475,7 +447,7 @@ public class InterfazTeacher extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField4KeyReleased
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-          JPanel panel = new JPanel();
+        JPanel panel = new JPanel();
         this.getContentPane().add(panel);
         JFileChooser j = new JFileChooser();
         j.showSaveDialog(null);
@@ -488,9 +460,8 @@ public class InterfazTeacher extends javax.swing.JFrame {
         JLabel etiqueta = new JLabel(new ImageIcon(ruta));
         panel.add(etiqueta);
         jLabel1.setIcon((Icon) archivo);
-        
-       
-        
+
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -547,13 +518,11 @@ public class InterfazTeacher extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTable tabla;
     // End of variables declaration//GEN-END:variables
 }
